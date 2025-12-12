@@ -27,6 +27,6 @@ let alternateStory = `${studentName} was a ${role} who proudly told ${professor}
 For the class project, he built ${project} where the front-end looked amazing—${frontEndMagic}.
 But when the professor clicked “Submit,” the back-end proudly responded with:
 ${backEndResponse}.
-${studentName} grinned and said, “${wittyRemark}”`;
+${studentName} grinned and said, “${smartRemark}”`;
 
 console.log(alternateStory);

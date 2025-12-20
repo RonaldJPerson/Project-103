@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #111827;
+    margin: 0 0 18px 0;
+    letter-spacing: 0.4px;
+}
+
+.card {
+    width: 100%;
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    }
+#controls { 
+    display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 12px; }
+#controls button {
+    margin: 0;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #4f46e5, #4338ca);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+
+}
+#controls button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(67,56,202,0.18); }
+#controls button:active { transform: translateY(0); }
+#controls button.secondary { background: linear-gradient(180deg, #10b981, #059669); }
+
+#result { font-weight: bold; margin-top: 0.5rem; text-align: center; min-height: 1.2em; }
+
+table { border-collapse: collapse; margin-top: 1rem; width: 100%; }
+table, th, td { border: 1px solid #e6e6e6; padding: 8px 12px; }
+thead th { background: #f3f4f6; text-align: left; }
+
+#thermometer { width: 50px; height: 200px; border-radius: 6px; overflow: hidden; background: #eee; border: 1px solid #ddd; }
+#thermometerFill { width: 100%; height: 0%; background: blue; transition: height 0.4s, background-color 0.4s; }
+#thermometerWrapper { display: flex; align-items: center; gap: 12px; margin-top: 1rem; justify-content: center; }
+#tableContainer { margin-top: 1rem; overflow-x: auto; }
+#thermometerLabel { margin: 8px 0 0 0; font-weight: 600; color: #333; }
+
+@media (max-width: 480px) {
+    .title { font-size: 1.4rem; }
+    #thermometer { height: 160px; }
+}

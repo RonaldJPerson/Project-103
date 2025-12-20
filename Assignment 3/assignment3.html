@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Temperature Converter</h1>
+    <h1 class="title">Temperature Converter</h1>
 
- <button type="button" onclick="convertTemperature()">Convert Temperature</button>
-    
-<div id="result">
+    <div class="card">
+      <div id="controls">
+        <button id="cToFBtn" type="button">Celsius ➡ Fahrenheit</button>
+        <button id="fToCBtn" type="button">Fahrenheit ➡ Celsius</button>
+        <button id="generateTableBtn" type="button" class="secondary">Generate Table</button>
+      </div>
 
-</div>
-<script src="assignment3.js"></script>
+      <div id="result" tabindex="0"></div>
+
+      <div id="tableContainer"></div>
+
+      <div id="thermometerWrapper" aria-label="Thermometer">
+        <div id="thermometer">
+          <div id="thermometerFill"></div>
+        </div>
+        <p id="thermometerLabel">-- °C</p>
+      </div>
+    </div>
+
+    <script src="Scripts/assignment3.js"></script>
 </body>
 </html>
